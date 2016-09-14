@@ -1,18 +1,20 @@
 $(document).ready(function() {
   $("button#hello").click(function() {
-    $("ul#user").prepend('<img src="img/cat.jpg" />');
-    $("ul#webpage").prepend('<img src="img/dog.jpg" />');
+    $("ul#user").prepend('<img id="cat" src="img/cat.jpg" />');
+    $("ul#webpage").prepend('<img id="dog" src="img/dog.jpg" />');
 
 //then you attach a click handler to the ul tag but we want to attach
 //an event handler to the one we just inserted
 //so instead of just selecting li and attaching a listener we are selecting child elements
     $("ul#user").children("img").first().click(function() {
-      $(this).remove();
+      $("#cat").remove();
+      alert("Meow");
     });
   //  $("ul#user").children("li").second().click(function() {
     //  $(this).show();
     $("ul#webpage").children("img").first().click(function() {
-      $(this).remove();
+      $("#dog").remove();
+      alert("Bark");
     });
   });
   $("button#goodbye").click(function() {
