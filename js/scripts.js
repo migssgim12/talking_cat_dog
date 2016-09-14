@@ -7,13 +7,12 @@ $(document).ready(function() {
 //an event handler to the one we just inserted
 //so instead of just selecting li and attaching a listener we are selecting child elements
     $("ul#user").children("img").first().click(function() {
-      $("#cat").remove();
       alert("Meow");
     });
   //  $("ul#user").children("li").second().click(function() {
     //  $(this).show();
     $("ul#webpage").children("img").first().click(function() {
-      $("#dog").remove();
+      // $("#dog").remove();
       alert("Bark");
     });
   });

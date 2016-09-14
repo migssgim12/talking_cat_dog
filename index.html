@@ -9,24 +9,28 @@
   </head>
   <body>
     <div class="container">
-      <h1>Talk to the web page</h1>
-      <p>Click a button to say something to the web page. See what it says back!</p>
+      <header class="page-header">
+      <h2>Talking webpage</h2>
+      <p>Click the button to reveal pictures of <strong>Dogs + Cats</strong>. Then, Click on the <strong>images</strong> and see what happens. </p>
+    </header>
+      <div class="wrapper">
 
-      <button class="btn btn-primary" id="hello">Say "hello"</button>
-      <button class="btn btn-inverse" id="goodbye">Say "goodbye"</button>
-      <button class="btn btn-danger" id="stop">Say "stop copying me!"</button>
+      </div>
+      <!-- <button class="btn btn-inverse" id="goodbye">Say "goodbye"</button>
+      <button class="btn btn-danger" id="stop">Say "stop copying me!"</button> -->
 
-      
-
+    <div class="row">
+      <button class="btn btn-primary" id="hello">Dogs and Cats</button>
+    </div>
       <div class="row">
         <div class="col-md-6">
-          <h2>You said:</h2>
+          <h3>One Animal Says:</h3>
           <ul class="unstyled" id="user">
           </ul>
         </div>
 
         <div class="col-md-6">
-          <h2>The web page said back:</h2>
+          <h3>Another One Says:</h3>
           <ul class="unstyled" id="webpage">
           </ul>
         </div>
